@@ -15,12 +15,12 @@ GUI library for Roblox with modern features.
 
 ## Usage
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/YOUR_USER/YOUR_REPO/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/longv7217-commits/RV-UI-Library/refs/heads/main/Rv-UI%20Main%20Source"))()
 
 local Window = Library:CreateWindow({
-    Title = "PeakUI Example",
+    Title = "RVUI Example",
     KeySystem = false, -- true to enable key system
-    Key = "PEAK-2024", -- the key needed if KeySystem is true
+    Key = "RV-UI 2026", -- the key needed if KeySystem is true
 })
 
 local Tab = Window:CreateTab("Main")
@@ -69,6 +69,6 @@ Tab:CreateKeybind({
 
 Library:Notify({
     Title = "Hello",
-    Content = "Welcome to PeakUI!",
+    Content = "Welcome to RV-UI!",
     Duration = 5,
 })
