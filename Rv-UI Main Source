@@ -1247,4 +1247,5 @@ function Library:CreateWindow(opts)
     return Window
 end
 
+getgenv().Library = Library
 return Library
