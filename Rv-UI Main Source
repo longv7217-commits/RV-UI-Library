@@ -17,7 +17,7 @@ Library.Opened = true
 Library.Keybind = Enum.KeyCode.RightShift
 Library.ThemeName = "Default"
 Library.ConfigFolder = "RayfieldStyleLibrary"
-Library.Version = "2.0.0"
+Library.Version = "1.0.0"
 
 local function ClampNumber(v, mn, mx)
 if v < mn then return mn end
@@ -34,425 +34,65 @@ local m = 10 ^ (d or 2)
 return math.floor(v * m + 0.5) / m
 end
 
-local function Util1(v)
-    if v == nil then return 1 end
-    if type(v) == "number" then return v + 1 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util2(v)
-    if v == nil then return 2 end
-    if type(v) == "number" then return v + 2 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util3(v)
-    if v == nil then return 3 end
-    if type(v) == "number" then return v + 3 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util4(v)
-    if v == nil then return 4 end
-    if type(v) == "number" then return v + 4 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util5(v)
-    if v == nil then return 5 end
-    if type(v) == "number" then return v + 5 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util6(v)
-    if v == nil then return 6 end
-    if type(v) == "number" then return v + 6 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util7(v)
-    if v == nil then return 7 end
-    if type(v) == "number" then return v + 7 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util8(v)
-    if v == nil then return 8 end
-    if type(v) == "number" then return v + 8 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util9(v)
-    if v == nil then return 9 end
-    if type(v) == "number" then return v + 9 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util10(v)
-    if v == nil then return 10 end
-    if type(v) == "number" then return v + 10 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util11(v)
-    if v == nil then return 11 end
-    if type(v) == "number" then return v + 11 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util12(v)
-    if v == nil then return 12 end
-    if type(v) == "number" then return v + 12 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util13(v)
-    if v == nil then return 13 end
-    if type(v) == "number" then return v + 13 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util14(v)
-    if v == nil then return 14 end
-    if type(v) == "number" then return v + 14 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util15(v)
-    if v == nil then return 15 end
-    if type(v) == "number" then return v + 15 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util16(v)
-    if v == nil then return 16 end
-    if type(v) == "number" then return v + 16 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util17(v)
-    if v == nil then return 17 end
-    if type(v) == "number" then return v + 17 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util18(v)
-    if v == nil then return 18 end
-    if type(v) == "number" then return v + 18 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util19(v)
-    if v == nil then return 19 end
-    if type(v) == "number" then return v + 19 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util20(v)
-    if v == nil then return 20 end
-    if type(v) == "number" then return v + 20 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util21(v)
-    if v == nil then return 21 end
-    if type(v) == "number" then return v + 21 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util22(v)
-    if v == nil then return 22 end
-    if type(v) == "number" then return v + 22 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util23(v)
-    if v == nil then return 23 end
-    if type(v) == "number" then return v + 23 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util24(v)
-    if v == nil then return 24 end
-    if type(v) == "number" then return v + 24 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util25(v)
-    if v == nil then return 25 end
-    if type(v) == "number" then return v + 25 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util26(v)
-    if v == nil then return 26 end
-    if type(v) == "number" then return v + 26 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util27(v)
-    if v == nil then return 27 end
-    if type(v) == "number" then return v + 27 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util28(v)
-    if v == nil then return 28 end
-    if type(v) == "number" then return v + 28 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util29(v)
-    if v == nil then return 29 end
-    if type(v) == "number" then return v + 29 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util30(v)
-    if v == nil then return 30 end
-    if type(v) == "number" then return v + 30 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util31(v)
-    if v == nil then return 31 end
-    if type(v) == "number" then return v + 31 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util32(v)
-    if v == nil then return 32 end
-    if type(v) == "number" then return v + 32 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util33(v)
-    if v == nil then return 33 end
-    if type(v) == "number" then return v + 33 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util34(v)
-    if v == nil then return 34 end
-    if type(v) == "number" then return v + 34 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util35(v)
-    if v == nil then return 35 end
-    if type(v) == "number" then return v + 35 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util36(v)
-    if v == nil then return 36 end
-    if type(v) == "number" then return v + 36 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util37(v)
-    if v == nil then return 37 end
-    if type(v) == "number" then return v + 37 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util38(v)
-    if v == nil then return 38 end
-    if type(v) == "number" then return v + 38 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util39(v)
-    if v == nil then return 39 end
-    if type(v) == "number" then return v + 39 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util40(v)
-    if v == nil then return 40 end
-    if type(v) == "number" then return v + 40 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util41(v)
-    if v == nil then return 41 end
-    if type(v) == "number" then return v + 41 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util42(v)
-    if v == nil then return 42 end
-    if type(v) == "number" then return v + 42 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util43(v)
-    if v == nil then return 43 end
-    if type(v) == "number" then return v + 43 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util44(v)
-    if v == nil then return 44 end
-    if type(v) == "number" then return v + 44 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util45(v)
-    if v == nil then return 45 end
-    if type(v) == "number" then return v + 45 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util46(v)
-    if v == nil then return 46 end
-    if type(v) == "number" then return v + 46 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util47(v)
-    if v == nil then return 47 end
-    if type(v) == "number" then return v + 47 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util48(v)
-    if v == nil then return 48 end
-    if type(v) == "number" then return v + 48 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util49(v)
-    if v == nil then return 49 end
-    if type(v) == "number" then return v + 49 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util50(v)
-    if v == nil then return 50 end
-    if type(v) == "number" then return v + 50 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util51(v)
-    if v == nil then return 51 end
-    if type(v) == "number" then return v + 51 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util52(v)
-    if v == nil then return 52 end
-    if type(v) == "number" then return v + 52 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util53(v)
-    if v == nil then return 53 end
-    if type(v) == "number" then return v + 53 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util54(v)
-    if v == nil then return 54 end
-    if type(v) == "number" then return v + 54 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util55(v)
-    if v == nil then return 55 end
-    if type(v) == "number" then return v + 55 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util56(v)
-    if v == nil then return 56 end
-    if type(v) == "number" then return v + 56 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util57(v)
-    if v == nil then return 57 end
-    if type(v) == "number" then return v + 57 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util58(v)
-    if v == nil then return 58 end
-    if type(v) == "number" then return v + 58 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util59(v)
-    if v == nil then return 59 end
-    if type(v) == "number" then return v + 59 end
-    if type(v) == "string" then return v end
-    return v
-end
 
-local function Util60(v)
-    if v == nil then return 60 end
-    if type(v) == "number" then return v + 60 end
-    if type(v) == "string" then return v end
-    return v
-end
 
 Library.Themes = {}
 Library.Themes["Default"] = {
@@ -835,1145 +475,65 @@ Library.Themes["Neon"] = {
     Index = 20,
 }
 
-Library.Themes["Theme21"] = {
-    Name = "Theme21",
-    Accent = Color3.fromRGB(9,253,241),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 21,
-}
 
-Library.Themes["Theme22"] = {
-    Name = "Theme22",
-    Accent = Color3.fromRGB(46,70,94),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 22,
-}
 
-Library.Themes["Theme23"] = {
-    Name = "Theme23",
-    Accent = Color3.fromRGB(83,143,203),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 23,
-}
 
-Library.Themes["Theme24"] = {
-    Name = "Theme24",
-    Accent = Color3.fromRGB(120,216,56),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 24,
-}
 
-Library.Themes["Theme25"] = {
-    Name = "Theme25",
-    Accent = Color3.fromRGB(157,33,165),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 25,
-}
 
-Library.Themes["Theme26"] = {
-    Name = "Theme26",
-    Accent = Color3.fromRGB(194,106,18),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 26,
-}
 
-Library.Themes["Theme27"] = {
-    Name = "Theme27",
-    Accent = Color3.fromRGB(231,179,127),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 27,
-}
 
-Library.Themes["Theme28"] = {
-    Name = "Theme28",
-    Accent = Color3.fromRGB(12,252,236),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 28,
-}
 
-Library.Themes["Theme29"] = {
-    Name = "Theme29",
-    Accent = Color3.fromRGB(49,69,89),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 29,
-}
 
-Library.Themes["Theme30"] = {
-    Name = "Theme30",
-    Accent = Color3.fromRGB(86,142,198),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 30,
-}
 
-Library.Themes["Theme31"] = {
-    Name = "Theme31",
-    Accent = Color3.fromRGB(123,215,51),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 31,
-}
 
-Library.Themes["Theme32"] = {
-    Name = "Theme32",
-    Accent = Color3.fromRGB(160,32,160),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 32,
-}
 
-Library.Themes["Theme33"] = {
-    Name = "Theme33",
-    Accent = Color3.fromRGB(197,105,13),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 33,
-}
 
-Library.Themes["Theme34"] = {
-    Name = "Theme34",
-    Accent = Color3.fromRGB(234,178,122),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 34,
-}
 
-Library.Themes["Theme35"] = {
-    Name = "Theme35",
-    Accent = Color3.fromRGB(15,251,231),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 35,
-}
 
-Library.Themes["Theme36"] = {
-    Name = "Theme36",
-    Accent = Color3.fromRGB(52,68,84),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 36,
-}
 
-Library.Themes["Theme37"] = {
-    Name = "Theme37",
-    Accent = Color3.fromRGB(89,141,193),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 37,
-}
 
-Library.Themes["Theme38"] = {
-    Name = "Theme38",
-    Accent = Color3.fromRGB(126,214,46),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 38,
-}
 
-Library.Themes["Theme39"] = {
-    Name = "Theme39",
-    Accent = Color3.fromRGB(163,31,155),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 39,
-}
 
-Library.Themes["Theme40"] = {
-    Name = "Theme40",
-    Accent = Color3.fromRGB(200,104,8),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 40,
-}
 
-Library.Themes["Theme41"] = {
-    Name = "Theme41",
-    Accent = Color3.fromRGB(237,177,117),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 41,
-}
 
-Library.Themes["Theme42"] = {
-    Name = "Theme42",
-    Accent = Color3.fromRGB(18,250,226),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 42,
-}
 
-Library.Themes["Theme43"] = {
-    Name = "Theme43",
-    Accent = Color3.fromRGB(55,67,79),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 43,
-}
 
-Library.Themes["Theme44"] = {
-    Name = "Theme44",
-    Accent = Color3.fromRGB(92,140,188),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 44,
-}
 
-Library.Themes["Theme45"] = {
-    Name = "Theme45",
-    Accent = Color3.fromRGB(129,213,41),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 45,
-}
 
-Library.Themes["Theme46"] = {
-    Name = "Theme46",
-    Accent = Color3.fromRGB(166,30,150),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 46,
-}
 
-Library.Themes["Theme47"] = {
-    Name = "Theme47",
-    Accent = Color3.fromRGB(203,103,3),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 47,
-}
 
-Library.Themes["Theme48"] = {
-    Name = "Theme48",
-    Accent = Color3.fromRGB(240,176,112),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 48,
-}
 
-Library.Themes["Theme49"] = {
-    Name = "Theme49",
-    Accent = Color3.fromRGB(21,249,221),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 49,
-}
 
-Library.Themes["Theme50"] = {
-    Name = "Theme50",
-    Accent = Color3.fromRGB(58,66,74),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 50,
-}
 
-Library.Themes["Theme51"] = {
-    Name = "Theme51",
-    Accent = Color3.fromRGB(95,139,183),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 51,
-}
 
-Library.Themes["Theme52"] = {
-    Name = "Theme52",
-    Accent = Color3.fromRGB(132,212,36),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 52,
-}
 
-Library.Themes["Theme53"] = {
-    Name = "Theme53",
-    Accent = Color3.fromRGB(169,29,145),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 53,
-}
 
-Library.Themes["Theme54"] = {
-    Name = "Theme54",
-    Accent = Color3.fromRGB(206,102,254),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 54,
-}
 
-Library.Themes["Theme55"] = {
-    Name = "Theme55",
-    Accent = Color3.fromRGB(243,175,107),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 55,
-}
 
-Library.Themes["Theme56"] = {
-    Name = "Theme56",
-    Accent = Color3.fromRGB(24,248,216),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 56,
-}
 
-Library.Themes["Theme57"] = {
-    Name = "Theme57",
-    Accent = Color3.fromRGB(61,65,69),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 57,
-}
 
-Library.Themes["Theme58"] = {
-    Name = "Theme58",
-    Accent = Color3.fromRGB(98,138,178),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 58,
-}
 
-Library.Themes["Theme59"] = {
-    Name = "Theme59",
-    Accent = Color3.fromRGB(135,211,31),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 59,
-}
 
-Library.Themes["Theme60"] = {
-    Name = "Theme60",
-    Accent = Color3.fromRGB(172,28,140),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 60,
-}
 
-Library.Themes["Theme61"] = {
-    Name = "Theme61",
-    Accent = Color3.fromRGB(209,101,249),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 61,
-}
 
-Library.Themes["Theme62"] = {
-    Name = "Theme62",
-    Accent = Color3.fromRGB(246,174,102),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 62,
-}
 
-Library.Themes["Theme63"] = {
-    Name = "Theme63",
-    Accent = Color3.fromRGB(27,247,211),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 63,
-}
 
-Library.Themes["Theme64"] = {
-    Name = "Theme64",
-    Accent = Color3.fromRGB(64,64,64),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 64,
-}
 
-Library.Themes["Theme65"] = {
-    Name = "Theme65",
-    Accent = Color3.fromRGB(101,137,173),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 65,
-}
 
-Library.Themes["Theme66"] = {
-    Name = "Theme66",
-    Accent = Color3.fromRGB(138,210,26),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 66,
-}
 
-Library.Themes["Theme67"] = {
-    Name = "Theme67",
-    Accent = Color3.fromRGB(175,27,135),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 67,
-}
 
-Library.Themes["Theme68"] = {
-    Name = "Theme68",
-    Accent = Color3.fromRGB(212,100,244),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 68,
-}
 
-Library.Themes["Theme69"] = {
-    Name = "Theme69",
-    Accent = Color3.fromRGB(249,173,97),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 69,
-}
 
-Library.Themes["Theme70"] = {
-    Name = "Theme70",
-    Accent = Color3.fromRGB(30,246,206),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 70,
-}
 
-Library.Themes["Theme71"] = {
-    Name = "Theme71",
-    Accent = Color3.fromRGB(67,63,59),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 71,
-}
 
-Library.Themes["Theme72"] = {
-    Name = "Theme72",
-    Accent = Color3.fromRGB(104,136,168),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 72,
-}
 
-Library.Themes["Theme73"] = {
-    Name = "Theme73",
-    Accent = Color3.fromRGB(141,209,21),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 73,
-}
 
-Library.Themes["Theme74"] = {
-    Name = "Theme74",
-    Accent = Color3.fromRGB(178,26,130),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 74,
-}
 
-Library.Themes["Theme75"] = {
-    Name = "Theme75",
-    Accent = Color3.fromRGB(215,99,239),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 75,
-}
 
-Library.Themes["Theme76"] = {
-    Name = "Theme76",
-    Accent = Color3.fromRGB(252,172,92),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 76,
-}
 
-Library.Themes["Theme77"] = {
-    Name = "Theme77",
-    Accent = Color3.fromRGB(33,245,201),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 77,
-}
 
-Library.Themes["Theme78"] = {
-    Name = "Theme78",
-    Accent = Color3.fromRGB(70,62,54),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 78,
-}
 
-Library.Themes["Theme79"] = {
-    Name = "Theme79",
-    Accent = Color3.fromRGB(107,135,163),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 79,
-}
 
-Library.Themes["Theme80"] = {
-    Name = "Theme80",
-    Accent = Color3.fromRGB(144,208,16),
-    Background = Color3.fromRGB(12,12,12),
-    Panel = Color3.fromRGB(20,20,20),
-    PanelLight = Color3.fromRGB(30,30,30),
-    Stroke = Color3.fromRGB(45,45,45),
-    Text = Color3.fromRGB(255,255,255),
-    SubText = Color3.fromRGB(170,170,170),
-    Placeholder = Color3.fromRGB(120,120,120),
-    Success = Color3.fromRGB(0,210,120),
-    Warning = Color3.fromRGB(255,180,0),
-    Error = Color3.fromRGB(255,80,80),
-    Font = Enum.Font.GothamMedium,
-    FontBold = Enum.Font.GothamBold,
-    FontSemi = Enum.Font.GothamSemibold,
-    Index = 80,
-}
 
 Library.CurrentTheme = Library.Themes["Default"]
 
@@ -1987,13 +547,25 @@ local function NewInst(class, props, parent)
         end
     end
     if inst:IsA("GuiObject") then inst.Active = true inst.Draggable = false end
+    if inst:IsA("TextButton") or inst:IsA("ImageButton") then
+        local baseBg = inst.BackgroundColor3
+        pcall(function()
+            inst.MouseEnter:Connect(function()
+                if inst.BackgroundTransparency >= 0.99 then return end
+                local tw = TweenService:Create(inst, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.new(math.min(baseBg.R + 0.07, 1), math.min(baseBg.G + 0.07, 1), math.min(baseBg.B + 0.07, 1))})
+                tw:Play()
+            end)
+            inst.MouseLeave:Connect(function()
+                local tw = TweenService:Create(inst, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = baseBg})
+                tw:Play()
+            end)
+        end)
+    end
     if parent then inst.Parent = parent end
     return inst
 end
 local function Corner(parent, r)
-    local radius = r or 8
-    if radius <= 50 then radius = math.min(radius, 6) end
-    return NewInst("UICorner", {Parent = parent, CornerRadius = UDim.new(0, radius)})
+    return NewInst("UICorner", {Parent = parent, CornerRadius = UDim.new(0, 0)})
 end
 local function Stroke(parent, color, thick, trans)
     return NewInst("UIStroke", {Parent = parent, Color = color or Library.CurrentTheme.Stroke, Thickness = thick or 1, Transparency = trans or 0, ApplyStrokeMode = Enum.ApplyStrokeMode.Border})
@@ -2033,165 +605,45 @@ local function DestroyAllLibraryGuis()
     Library.Windows = {}
 end
 
-local function DragHelper1(frame)
-    return frame
-end
 
-local function DragHelper2(frame)
-    return frame
-end
 
-local function DragHelper3(frame)
-    return frame
-end
 
-local function DragHelper4(frame)
-    return frame
-end
 
-local function DragHelper5(frame)
-    return frame
-end
 
-local function DragHelper6(frame)
-    return frame
-end
 
-local function DragHelper7(frame)
-    return frame
-end
 
-local function DragHelper8(frame)
-    return frame
-end
 
-local function DragHelper9(frame)
-    return frame
-end
 
-local function DragHelper10(frame)
-    return frame
-end
 
-local function DragHelper11(frame)
-    return frame
-end
 
-local function DragHelper12(frame)
-    return frame
-end
 
-local function DragHelper13(frame)
-    return frame
-end
 
-local function DragHelper14(frame)
-    return frame
-end
 
-local function DragHelper15(frame)
-    return frame
-end
 
-local function DragHelper16(frame)
-    return frame
-end
 
-local function DragHelper17(frame)
-    return frame
-end
 
-local function DragHelper18(frame)
-    return frame
-end
 
-local function DragHelper19(frame)
-    return frame
-end
 
-local function DragHelper20(frame)
-    return frame
-end
 
-local function DragHelper21(frame)
-    return frame
-end
 
-local function DragHelper22(frame)
-    return frame
-end
 
-local function DragHelper23(frame)
-    return frame
-end
 
-local function DragHelper24(frame)
-    return frame
-end
 
-local function DragHelper25(frame)
-    return frame
-end
 
-local function DragHelper26(frame)
-    return frame
-end
 
-local function DragHelper27(frame)
-    return frame
-end
 
-local function DragHelper28(frame)
-    return frame
-end
 
-local function DragHelper29(frame)
-    return frame
-end
 
-local function DragHelper30(frame)
-    return frame
-end
 
-local function DragHelper31(frame)
-    return frame
-end
 
-local function DragHelper32(frame)
-    return frame
-end
 
-local function DragHelper33(frame)
-    return frame
-end
 
-local function DragHelper34(frame)
-    return frame
-end
 
-local function DragHelper35(frame)
-    return frame
-end
 
-local function DragHelper36(frame)
-    return frame
-end
 
-local function DragHelper37(frame)
-    return frame
-end
 
-local function DragHelper38(frame)
-    return frame
-end
 
-local function DragHelper39(frame)
-    return frame
-end
 
-local function DragHelper40(frame)
-    return frame
-end
 
 
 function Library:TrackConnection(conn)
@@ -2254,8 +706,8 @@ function Library:CreateWindow(opts)
     local Content = NewInst("Frame", {Parent = Main, Size = UDim2.new(1, -170, 1, -52), Position = UDim2.new(0, 170, 0, 52), BackgroundColor3 = th.Background, BorderSizePixel = 0, ClipsDescendants = true})
     NewInst("UIListLayout", {Parent = TabBar, Padding = UDim.new(0, 6), SortOrder = Enum.SortOrder.LayoutOrder}) Padding(TabBar, 10, 10, 10, 10)
     local MiniBar = NewInst("Frame", {Parent = ScreenGui, Size = UDim2.new(0, 56, 0, 56), Position = UDim2.new(0, 16, 0, 120), BackgroundColor3 = th.Panel, BorderSizePixel = 0, Visible = false, ClipsDescendants = true, Active = true, Draggable = false, ZIndex = 90})
-    Corner(MiniBar, 28) Stroke(MiniBar, th.Accent, 1)
-    local MiniDot = NewInst("Frame", {Parent = MiniBar, Size = UDim2.new(0, 10, 0, 10), Position = UDim2.new(1, -14, 0, 4), BackgroundColor3 = th.Accent, BorderSizePixel = 0, ZIndex = 92}) Corner(MiniDot, 100)
+    Corner(MiniBar, 0) Stroke(MiniBar, th.Accent, 1)
+    local MiniDot = NewInst("Frame", {Parent = MiniBar, Size = UDim2.new(0, 10, 0, 10), Position = UDim2.new(1, -14, 0, 4), BackgroundColor3 = th.Accent, BorderSizePixel = 0, ZIndex = 92}) Corner(MiniDot, 0)
     local MiniLabel = NewInst("TextLabel", {Parent = MiniBar, Size = UDim2.new(1, 0, 1, 0), BackgroundTransparency = 1, Text = string.sub(opts.Title or opts.Name or "R", 1, 1), TextColor3 = th.Text, Font = th.FontBold, TextSize = 22, TextXAlignment = Enum.TextXAlignment.Center, TextYAlignment = Enum.TextYAlignment.Center, ZIndex = 91})
     local MiniBtn = NewInst("TextButton", {Parent = MiniBar, Size = UDim2.new(1, 0, 1, 0), BackgroundTransparency = 1, Text = "", AutoButtonColor = false, ZIndex = 93})
     local FloatButton = MiniBar
@@ -2277,14 +729,14 @@ function Library:CreateWindow(opts)
     Window.SavedPosition = Main.Position
     Window.FloatButton = FloatButton
     Window.MiniBar = MiniBar
+    Window.Version = "1.0.0"
     Window._dragStart = Vector2.new(0,0)
     Window._startPos = Main.Position
     Window._conns = {}
     local function AddConn(c) table.insert(Window._conns, c) table.insert(Library.Connections, c) return c end
     local function SetMinimized(v)
         Window._isMinimized = v
-        if v then Main.Visible = false MiniBar.Visible = true else Main.Visible = true MiniBar.Visible = false end
-        if v then Tween(MiniBar, {Size = UDim2.new(0, 56, 0, 56)}, 0.2) end
+        if v then Main.Visible = false MiniBar.Visible = true MiniBar.Size = UDim2.new(0, 44, 0, 44) Tween(MiniBar, {Size = UDim2.new(0, 56, 0, 56)}, 0.22, Enum.EasingStyle.Back) else Main.Visible = true MiniBar.Visible = false end
     end
     local function SetHidden(v)
         Window._isHidden = v
@@ -2300,6 +752,8 @@ function Library:CreateWindow(opts)
     AddConn(MinBtn.MouseLeave:Connect(function() Tween(MinBtn, {BackgroundColor3 = th.PanelLight}, 0.15) end))
     local dragInput = nil
     local ActiveDragKind = nil
+    local dragLastPos = Vector2.new(0, 0)
+    local dragTotalMoved = 0
     local function IsPointInGui(gui, point)
         if not gui then return false end
         local ap = gui.AbsolutePosition
@@ -2314,8 +768,6 @@ function Library:CreateWindow(opts)
         end
         return false
     end
-    local dragLastPos = Vector2.new(0, 0)
-    local dragTotalMoved = 0
     local function BeginDrag(kind, input)
         if ActiveDragKind ~= nil then return false end
         ActiveDragKind = kind
@@ -2331,21 +783,46 @@ function Library:CreateWindow(opts)
         dragInput = nil
         ActiveDragKind = nil
     end
-    AddConn(TopBar.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-            if IsOverInteractive(TopBar, input.Position) then return end
-            BeginDrag("main", input)
+    local ResizeHandle = NewInst("TextButton", {Parent = Main, Size = UDim2.new(0, 36, 0, 36), Position = UDim2.new(1, -36, 1, -36), BackgroundTransparency = 1, Text = "", AutoButtonColor = false, Active = true, Draggable = false, ZIndex = 60})
+    local HandLabel = NewInst("TextLabel", {Parent = ResizeHandle, Size = UDim2.new(1, 0, 1, 0), BackgroundTransparency = 1, Text = "✋", TextColor3 = Color3.fromRGB(255, 255, 255), Font = th.FontBold, TextSize = 22, TextXAlignment = Enum.TextXAlignment.Center, TextYAlignment = Enum.TextYAlignment.Center, ZIndex = 61})
+    local ResizeDragging = false
+    local ResizeStartPos = Vector2.new(0, 0)
+    local ResizeStartSize = Main.Size
+    AddConn(UserInputService.InputBegan:Connect(function(input, gp)
+        if gp then return end
+        if input.UserInputType ~= Enum.UserInputType.MouseButton1 and input.UserInputType ~= Enum.UserInputType.Touch then return end
+        if ActiveDragKind ~= nil then return end
+        if IsPointInGui(ResizeHandle, input.Position) and Main.Visible then
+            ActiveDragKind = "resize"
+            ResizeDragging = true
+            ResizeStartPos = input.Position
+            ResizeStartSize = Main.Size
+            if Window then Window.SavedSize = Window.SavedSize or Main.Size Window.SavedPosition = Window.SavedPosition or Main.Position end
+            HandLabel.Text = "✊"
+            Tween(HandLabel, {TextSize = 24}, 0.12)
+            return
         end
-    end))
-    AddConn(MiniBar.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-            if Window._isMinimized then Window._miniDragging = true end
+        if Window._isMinimized and IsPointInGui(MiniBar, input.Position) then
+            Window._miniDragging = true
             BeginDrag("float", input)
+            return
+        end
+        if Main.Visible and IsPointInGui(TopBar, input.Position) and not IsOverInteractive(TopBar, input.Position) then
+            BeginDrag("main", input)
+            return
         end
     end))
     AddConn(UserInputService.InputChanged:Connect(function(input)
-        if not Window._dragging then return end
         if input.UserInputType ~= Enum.UserInputType.MouseMovement and input.UserInputType ~= Enum.UserInputType.Touch then return end
+        if ResizeDragging and ActiveDragKind == "resize" then
+            local delta = input.Position - ResizeStartPos
+            local nw = math.clamp(ResizeStartSize.X.Offset + delta.X, 420, 980)
+            local nh = math.clamp(ResizeStartSize.Y.Offset + delta.Y, 300, 720)
+            Main.Size = UDim2.new(0, nw, 0, nh)
+            if Window then Window.SavedSize = Main.Size end
+            return
+        end
+        if not Window._dragging then return end
         local delta = input.Position - dragLastPos
         dragLastPos = input.Position
         dragTotalMoved = dragTotalMoved + math.abs(delta.X) + math.abs(delta.Y)
@@ -2354,9 +831,7 @@ function Library:CreateWindow(opts)
         local vh = cam and cam.ViewportSize.Y or 720
         if ActiveDragKind == "float" and Window._isMinimized then
             local cur = MiniBar.AbsolutePosition
-            local nx = math.clamp(cur.X + delta.X, 0, vw - 56)
-            local ny = math.clamp(cur.Y + delta.Y, 0, vh - 56)
-            MiniBar.Position = UDim2.new(0, nx, 0, ny)
+            MiniBar.Position = UDim2.new(0, math.clamp(cur.X + delta.X, 0, vw - 56), 0, math.clamp(cur.Y + delta.Y, 0, vh - 56))
         else
             local cur = Main.AbsolutePosition
             local nx = math.clamp(cur.X + delta.X, -Main.AbsoluteSize.X + 80, vw - 80)
@@ -2369,46 +844,18 @@ function Library:CreateWindow(opts)
         if input.UserInputType ~= Enum.UserInputType.MouseButton1 and input.UserInputType ~= Enum.UserInputType.Touch then return end
         local wasFloat = ActiveDragKind == "float"
         local moved = dragTotalMoved
-        EndDrag()
-        if wasFloat and moved < 6 and Window._isMinimized then SetMinimized(false) end
-    end))
-    local ResizeHandle = NewInst("TextButton", {Parent = Main, Size = UDim2.new(0, 36, 0, 36), Position = UDim2.new(1, -36, 1, -36), BackgroundTransparency = 1, Text = "", AutoButtonColor = false, Active = true, Draggable = false, ZIndex = 60})
-    local HandLabel = NewInst("TextLabel", {Parent = ResizeHandle, Size = UDim2.new(1, 0, 1, 0), BackgroundTransparency = 1, Text = "✋", TextColor3 = Color3.fromRGB(255, 255, 255), Font = th.FontBold, TextSize = 22, TextXAlignment = Enum.TextXAlignment.Center, TextYAlignment = Enum.TextYAlignment.Center, ZIndex = 61})
-    local ResizeDragging = false
-    local ResizeStartPos = Vector2.new(0, 0)
-    local ResizeStartSize = Main.Size
-    AddConn(ResizeHandle.InputBegan:Connect(function(input)
-        if ActiveDragKind ~= nil then return end
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-            ActiveDragKind = "resize"
-            ResizeDragging = true
-            ResizeStartPos = input.Position
-            ResizeStartSize = Main.Size
-            if Window then Window.SavedSize = Window.SavedSize or Main.Size Window.SavedPosition = Window.SavedPosition or Main.Position end
-            HandLabel.Text = "✊"
-            Tween(HandLabel, {TextSize = 24}, 0.12)
-        end
-    end))
-    AddConn(UserInputService.InputChanged:Connect(function(input)
-        if not ResizeDragging or ActiveDragKind ~= "resize" then return end
-        if input.UserInputType ~= Enum.UserInputType.MouseMovement and input.UserInputType ~= Enum.UserInputType.Touch then return end
-        local delta = input.Position - ResizeStartPos
-        local nw = math.clamp(ResizeStartSize.X.Offset + delta.X, 420, 980)
-        local nh = math.clamp(ResizeStartSize.Y.Offset + delta.Y, 300, 720)
-        Main.Size = UDim2.new(0, nw, 0, nh)
-        if Window then Window.SavedSize = Main.Size end
-    end))
-    AddConn(UserInputService.InputEnded:Connect(function(input)
-        if input.UserInputType ~= Enum.UserInputType.MouseButton1 and input.UserInputType ~= Enum.UserInputType.Touch then return end
         if ResizeDragging then
             ResizeDragging = false
             if ActiveDragKind == "resize" then ActiveDragKind = nil end
             HandLabel.Text = "✋"
             Tween(HandLabel, {TextSize = 22}, 0.12)
         end
+        if Window._dragging then EndDrag() end
+        if wasFloat and moved < 6 and Window._isMinimized then SetMinimized(false) end
     end))
     AddConn(ResizeHandle.MouseEnter:Connect(function() if not ResizeDragging then Tween(HandLabel, {TextSize = 24}, 0.12) end end))
     AddConn(ResizeHandle.MouseLeave:Connect(function() if not ResizeDragging then Tween(HandLabel, {TextSize = 22}, 0.12) end end))
+    Main.Size = UDim2.new(0, 560, 0, 400) Tween(Main, {Size = UDim2.new(0, 620, 0, 440)}, 0.28, Enum.EasingStyle.Quad)
     local keybind = opts.Keybind or opts.ToggleKey or Enum.KeyCode.RightShift
     Window.Keybind = keybind
     AddConn(UserInputService.InputBegan:Connect(function(input, gp)
