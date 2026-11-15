@@ -5,8 +5,8 @@ The main file is library.txt. Copy the entire file into your executor and use it
 Credit: realvux
 
 Quick Start
-
 lua
+`
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/longv7217-commits/RV-UI-Library/refs/heads/main/Rv-UI%20Main%20Source"))()
 
 local Window = Library:CreateWindow({
@@ -19,7 +19,8 @@ local Window = Library:CreateWindow({
 local Tab = Window:CreateTab("Main", "Main")
 Tab:CreateToggle("Auto Farm", false, function(v) print(v) end)
 Tab:CreateSlider("Speed", 0, 100, 16, function(v) print(v) end)
-If your executor blocks HttpGet, download the file and use loadstring(readfile("library.txt"))() instead of the loadstring line above.
+`
+
 If you run it twice, the library automatically deletes the old GUI before creating a new one, so you won't have 2 overlapping UIs.
 
 Window, Dragging, Minimizing, Tab Switching, Resizing
